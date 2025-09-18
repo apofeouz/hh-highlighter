@@ -5,11 +5,11 @@
   "description": "Подсветка посещённых резюме и вакансий на hh.ru красным цветом.",
   "permissions": ["storage"],
   "host_permissions": ["https://*.hh.ru/*"],
-  "icons": {
-    "16": "icon_styled_16.png",
-    "48": "icon_styled_48.png",
-    "128": "icon_styled_128.png"
-  },
+ "icons": {
+  "16": "icon/icon_styled_16.png",
+  "48": "icon/icon_styled_48.png",
+  "128": "icon/icon_styled_128.png"
+},
   "author": "Sergey (apofeouz)",
   "homepage_url": "https://github.com/apofeouz/hh-visited-highlighter",
   "content_scripts": [
