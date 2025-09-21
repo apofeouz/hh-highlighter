@@ -77,4 +77,5 @@
 - [ЮMoney](https://yoomoney.ru/to/41001166778763)
 
 ## Version
-Актуальная версия: v1.0.1 (с фиксом бага с иконками, см. Issue #6)
+Актуальная версия: 1.0.1  
+Смотрите [manifest.json](manifest.json) и [Releases](https://github.com/apofeouz/hh-visited-highlighter/releases).
