@@ -11,7 +11,7 @@
   "128": "icon/icon_styled_128.png"
 },
   "author": "Sergey (apofeouz)",
-  "homepage_url": "https://github.com/apofeouz/hh-visited-highlighter",
+  "homepage_url": "https://github.com/apofeouz/hh-highlighter",
   "content_scripts": [
     {
       "matches": ["https://*.hh.ru/*"],
