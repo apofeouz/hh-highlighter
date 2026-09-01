@@ -64,12 +64,6 @@ h1{font-size:22px}
   </div>
   <p class="hint">Подсказка показывается только один раз при установке. Бейдж на иконке показывает кол-во отмеченных.</p>
 </div>
-<script>
-document.getElementById('pin-hint').addEventListener('click', (e)=>{
-  e.preventDefault();
-  window.close();
-  chrome.tabs.update({url:'https://hh.ru/search/vacancy'});
-});
-</script>
+<script src="onboarding.js"></script>
 </body>
 </html>
