@@ -1,22 +1,47 @@
 {
   "manifest_version": 3,
   "name": "HH Visited Highlighter",
-  "version": "1.0.1",
-  "description": "Подсветка посещённых резюме и вакансий на hh.ru красным цветом.",
-  "permissions": ["storage"],
-  "host_permissions": ["https://*.hh.ru/*"],
- "icons": {
-  "16": "icon/icon_styled_16.png",
-  "48": "icon/icon_styled_48.png",
-  "128": "icon/icon_styled_128.png"
-},
+  "version": "1.1.2",
+  "description": "Подсветка посещённых вакансий и резюме на hh.ru — выбор цвета, вкл/выкл в один клик.",
+  "permissions": [
+    "storage"
+  ],
+  "host_permissions": [
+    "https://*.hh.ru/*"
+  ],
+  "icons": {
+    "16": "icon/icon_styled_16.png",
+    "48": "icon/icon_styled_48.png",
+    "128": "icon/icon_styled_128.png"
+  },
+  "action": {
+    "default_title": "HH Visited Highlighter",
+    "default_popup": "popup.html",
+    "default_icon": {
+      "16": "icon/icon_styled_16.png",
+      "48": "icon/icon_styled_48.png",
+      "128": "icon/icon_styled_128.png"
+    }
+  },
   "author": "Sergey (apofeouz)",
   "homepage_url": "https://github.com/apofeouz/hh-highlighter",
+  "background": {
+    "service_worker": "background.js"
+  },
   "content_scripts": [
     {
-      "matches": ["https://*.hh.ru/*"],
-      "js": ["content.js"],
+      "matches": [
+        "https://*.hh.ru/*"
+      ],
+      "js": [
+        "content.js"
+      ],
       "run_at": "document_idle"
     }
-  ]
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "hh-highlighter@apofeouz"
+    }
+  }
 }

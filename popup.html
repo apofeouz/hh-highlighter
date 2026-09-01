@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>HH Highlighter</title>
+<link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <img src="icon/icon_styled_48.png" class="logo" alt="">
+      <div>
+        <h1>HH Highlighter</h1>
+        <p class="subtitle">Подсветка посещённых на hh.ru</p>
+      </div>
+    </header>
+
+    <label class="row toggle">
+      <span class="label">Подсветка включена</span>
+      <label class="switch"><input type="checkbox" id="enabled"><span class="slider"></span></label>
+    </label>
+
+    <div class="row">
+      <span class="label">Цвет подсветки</span>
+      <div class="color-row">
+        <input type="color" id="color" value="#d32f2f">
+        <input type="text" id="colorText" value="#d32f2f" maxlength="7" spellcheck="false">
+        <span id="preview" class="preview"></span>
+      </div>
+    </div>
+
+    <div class="row presets">
+      <span class="label">Быстрый выбор</span>
+      <div class="preset-list">
+        <button class="preset" data-color="#d32f2f" style="background:#d32f2f"></button>
+        <button class="preset" data-color="#ff6b00" style="background:#ff6b00"></button>
+        <button class="preset" data-color="#0ea5e9" style="background:#0ea5e9"></button>
+        <button class="preset" data-color="#22c55e" style="background:#22c55e"></button>
+        <button class="preset" data-color="#a855f7" style="background:#a855f7"></button>
+        <button class="preset" data-color="#64748b" style="background:#64748b"></button>
+      </div>
+    </div>
+
+    <div class="row history">
+      <div class="history-head">
+        <span class="label">История — <span id="visitedCount">0</span></span>
+        <button id="openHistory" class="link-btn">вся история →</button>
+      </div>
+      <div id="recentList" class="recent-list"></div>
+      <div class="history-actions">
+        <button id="clearBtn" class="btn danger small">Очистить всё</button>
+        <span class="hint">хранится только в браузере</span>
+      </div>
+    </div>
+
+    <footer class="footer">
+      <a href="https://chromewebstore.google.com/detail/bgmokfidjolcodaacpkjaoihldgldkko" target="_blank" class="btn secondary">★ Оценить</a>
+      <a href="https://yoomoney.ru/to/41001166778763" target="_blank" class="btn primary">Поддержать ☕</a>
+    </footer>
+    <a href="https://github.com/apofeouz/hh-highlighter" target="_blank" class="gh">GitHub</a>
+  </div>
+<script src="popup.js"></script>
+</body>
+</html>
