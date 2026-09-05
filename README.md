@@ -3,6 +3,8 @@
 **HH Visited Highlighter** — лёгкое расширение для Chrome/Firefox, которое подсвечивает посещённые вакансии и резюме на [hh.ru](https://hh.ru) выбранным цветом (по умолчанию `#d32f2f`).  
 Больше никакой путаницы: сразу видишь, где уже был, с историей и бейджем на иконке!
 
+🌐 **Сайт:** https://code.apofeouz.ru/hh-highlighter/ — ленд, скриншоты и история · **Хаб:** https://code.apofeouz.ru/
+
 ---
 
 ## ✨ Возможности
@@ -43,6 +45,8 @@
 ## 🚀 Установка из Store
 
 👉 [HH Highlighter — Chrome Web Store](https://chromewebstore.google.com/detail/bgmokfidjolcodaacpkjaoihldgldkko?utm_source=item-share-cb)
+
+🌐 Ленд: https://code.apofeouz.ru/hh-highlighter/
 
 ---
 
